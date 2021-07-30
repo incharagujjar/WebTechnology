@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<body>
+   <body style="background-color: paleturquoise"></body>
+   
+<br>
+<br>
+
+   <center><h1 style="color:purple;">REGULAR EXPRESSIONS</h1>
+
+
+   <h2 style="color:goldenrod;">INCHARA GUJJAR</h2>
+
+<p style="color:indigo;">1NT18IS193</p>
+<p style="color:indigo;">ISE "A" 6th sem</p></center>
+
+<br>
+
+
+
+<center><p>["pink","purple","green","blue","yellow"]</p>
+<p>Click on the button to filter all elements that do not contain e.</p>
+
+<button onclick="myFunc1()">Click me</button>
+
+<p id="p1"></p>
+
+<br>
+
+
+<p>["pink","purple","green","blue","yellow"]</p>
+<p>Click on the button to filter all elements that contains both e and n.</p>
+
+<button onclick="myFunc2()">Click me</button>
+
+<p id="p2"></p>
+<br>
+<p>['sing', 'dance', 'lovely', 'amazingly', 'wonderfully', 'fly']</p>
+
+<p>Click on the button to filter all elements that start with den or end with ly</p>
+
+<button onclick="myFunc3()">Click me</button>
+
+<p id="p3"></p>
+<br>
+
+<p>['handed', 'hand', 'handy', 'unhanded', 'handle', 'hand-2']</p>
+
+<p>Click on the button to replace hand with X for all words that start with hand followed by at least one word character.</p>
+
+<button onclick="myFunc4()">Click me</button>
+
+<p id="p4"></p>
+<br>
+
+<p> ['refused reed redo recieved']</p>
+<p>Click on the button to replace all occurrences of removed or reed or received or refused with X.</p>
+
+<button onclick="myFunc5()">Click me</button>
+
+<p id="p5"></p>
+<br>
+
+<p>'th\\er\\e ar\\e common asp\\ects among th\\e alt\\ernations' </p>
+
+
+<p>Click on the button to Replace all occurrences of \e with e.</p>
+
+<button onclick="myFunc6()">Click me</button>
+
+<p id="p6"></p></center>
+
+<script>
+
+function myFunc1() {
+    let colors = ["pink","purple","green","blue","yellow"];
+    const patt = new RegExp("e");
+    document.getElementById("p1").innerHTML = colors.filter(colors => !patt.test(colors));
+}
+
+function myFunc2() {
+   let colors = ["pink","purple","green","blue","yellow"];
+    const pat1 = /e/;
+    const pat2 = /n/;
+    document.getElementById("p2").innerHTML = colors.filter(colors=> pat1.test(colors)&&pat2.test(colors));
+}
+
+function myFunc3()
+{
+    items = ['sing', 'dance', 'lovely', 'amazingly', 'wonderfully', 'fly']
+    const pat1 = /^den/;
+    const pat2 = /ly$/;
+    document.getElementById("p3").innerHTML = items.filter(item => pat1.test(item)||pat2.test(item));
+}
+
+function myFunc4()
+{
+    items = ['handed', 'hand', 'handy', 'unhanded', 'handle', 'hand-2']
+    const pat1 = /^hand[a-zA-Z]+/;
+    document.getElementById("p4").innerHTML = items.map(item => 
+    {
+    if(pat1.test(item))
+    return item.replace("hand",'x');
+    else
+    return item;
+    })
+}
+
+function myFunc5()
+{
+    let str= "refused reed redo received"
+    const pat=/removed|reed|refused|received/gi;
+      let newstr=str.replace(pat,"X");
+      document.getElementById("p5").innerHTML = newstr;
+}
+
+function myFunc6()
+{
+    let str= "th\\er\\e ar\\e common asp\\ects among th\\e alt\\ernations";
+       let pat=/\\e/gi;
+      let newstr=str.replace(pat,"e");
+      document.getElementById("p6").innerHTML = newstr;
+}
+</script>
+
+</body>
+</html>

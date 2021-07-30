@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            body {
+      
+                text-align:center;
+      }
+    
+            </style>
+    </head>
+
+    <body >
+<h1><b>SELECT ONE</b></h1>
+        <a href="armstrong.html" >ARMSTRONG NUMBER</a>
+
+</br><br>
+<a  href="fibonacci.html">FIBONACCI</a>
+
+<br><br>
+
+
+<a  href="array.html">ARRAY FUNCTIONS</a>
+<br>
+<br>
+<a  href="happy.html">HAPPY OR NOT</a>
+
+
+
+
+
+
+</BODY>
+</html>
+
+
+
+<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head>
+    <title>fibonacci.html</title>
+  </head>
+  <body style="background-color: lightsalmon">
+    <h3 style="text-align: center; color: lavender">
+      Generating the Fibonacci Series
+    </h3>
+    <script type="text/javascript">
+      var limit = prompt(
+        "Enter a number to find its Fibonacci series:",
+        
+      );
+      var f1 = 0;
+      var f2 = 1;
+
+      document.write(
+        "Enter a number to find its fibonacci series: ",
+        limit,
+        "<br/>"
+      );
+      document.write("The fibonacci series : ");
+      document.write("", f1, " ");
+      document.write("", f2, " ");
+
+      var i, f3;
+      for (i = 2; i < limit; i++) {
+        f3 = f1 + f2;
+        document.write("", f3, " ");
+        f1 = f2;
+        f2 = f3;
+      }
+    </script>
+  </body>
+</html>

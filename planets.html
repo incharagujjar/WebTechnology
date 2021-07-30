@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <body style="background-color: gray"></body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function planet(name, distance){
+            this.name = name;
+            this.distance = distance;
+
+            this.display = function(){
+                document.getElementById("dsp").innerHTML =  `Planet name is ${this.name} and it's distance from sun is ${this.distance} million kms`
+            }
+        }
+        function fun1(){
+            let nwPlanet = new planet("Mercury", "52.816")
+            nwPlanet.display()
+            
+            butn.style.visibility= 'visible';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+        }
+        function morefun1(){
+            document.getElementById("disp1").innerHTML = "Mercury is the smallest planet in our solar system. ... Along with Venus, Earth, and Mars, Mercury is one of the rocky planets. It has a solid surface that is covered with craters. It has no atmosphere, and it doesn't have any moons."
+            butn.style.visibility= 'hidden';
+            
+        }
+        function fun2(){
+            let nwPlanet2 = new planet("Venus", "107.78")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'visible';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+        }
+        function morefun2(){
+            document.getElementById("disp1").innerHTML = "Venus is the second planet from the Sun, and is Earth's closest neighbor in the solar system. Venus is the brightest object in the sky after the Sun and the Moon, and sometimes looks like a bright star in the morning or evening sky. The planet is a little smaller than Earth, and is similar to Earth inside."
+            butn2.style.visibility= 'hidden';
+        }
+
+        function fun3(){
+            let nwPlanet2 = new planet("Earth", "151.06")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'visible';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+        }
+        function morefun3(){
+            document.getElementById("disp1").innerHTML = " Earth, our home planet, is a world unlike any other. The third planet from the sun, Earth is the only place in the known universe confirmed to host life. With a radius of 3,959 miles, Earth is the fifth largest planet in our solar system, and it's the only one known for sure to have liquid water on its surface."
+            butn3.style.visibility= 'hidden';
+        }
+
+        function fun4(){
+            let nwPlanet2 = new planet("Mars", "247.72")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'visible';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+        }
+        function morefun4(){
+            document.getElementById("disp1").innerHTML = "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the 'Red Planet'"
+            butn4.style.visibility= 'hidden';
+        }
+
+        function fun5(){
+            let nwPlanet2 = new planet("Jupiter", "756.52")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'visible';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+        }
+        function morefun5(){
+            document.getElementById("disp1").innerHTML = "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun."
+            butn5.style.visibility= 'hidden';
+        }
+
+        function fun6(){
+            let nwPlanet2 = new planet("Saturn", "1488.10")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'visible';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+        }
+        function morefun6(){
+            document.getElementById("disp1").innerHTML = "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth; however, with its larger volume, Saturn is over 95 times more massive."
+            butn6.style.visibility= 'hidden';
+        }
+        function fun7(){
+            let nwPlanet2 = new planet("Neptune", "4475.56")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'visible';
+            document.getElementById("disp1").innerHTML = ""
+        }
+        function morefun7(){
+            document.getElementById("disp1").innerHTML = "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, slightly more massive than its near-twin Uranus."
+            butn7.style.visibility= 'hidden';
+        }
+    </script>
+    <style>
+        button{
+            justify-content: space-around;
+        }
+        #butn2{
+            visibility: hidden;
+        }
+        #butn3{
+            visibility: hidden;
+        }
+        #butn4{
+            visibility: hidden;
+        }
+        #butn5{
+            visibility: hidden;
+        }
+        #butn6{
+            visibility: hidden;
+        }
+        #butn7{
+            visibility: hidden;
+        }
+        #butn{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <h1 style="text-align: center;">About Our Planets</h1>
+    <div style="margin-top: 50px; text-align: center; justify-items: stretch; justify-self: stretch; ">
+        <button onclick="fun1()">Mercury</button>
+        
+        <button onclick="fun2()">Venus</button>
+        
+        <button onclick="fun3()">Earth</button>
+        
+        <button onclick="fun4()">Mars</button>
+    
+        <button onclick="fun5()">Jupiter</button>
+        <button onclick="fun6()">Saturn</button>
+        <button onclick="fun7()">Neptune</button>
+        
+        <p id="dsp"></p>
+        <img src="" alt="">
+     <center>  <button id="butn" onclick="morefun1()">Info here!</button>
+       <center> <button id="butn2" onclick="morefun2()">Info here!</button></center>
+        <center><button id="butn3" onclick="morefun3()">Info here!</button></center>
+       <center> <button id="butn4" onclick="morefun4()">Info here!</button></center>
+       <center> <button id="butn5" onclick="morefun5()">Info here!</button></center>
+        <center><button id="butn6" onclick="morefun6()">Info here!</button></center>
+       <center><button id="butn7" onclick="morefun7()">Info here!</button></center> 
+        <p id="disp1"></p>
+    </div>
+    
+</body>
+</html>

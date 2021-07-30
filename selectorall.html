@@ -1,0 +1,26 @@
+<html>
+<body>
+<br>
+<br>
+<br>
+<center><h2 class="example">This is an example <title></title></h2>
+<p class="example">This paragraph consists of the word example</p> 
+
+<p>Click here to add background color to the elements with the word title</p>
+
+<button onclick="myFunction()">Click me</button></center>
+
+
+
+<script>
+function myFunction() {
+  var x, i;
+  x = document.querySelectorAll(".example");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "orchid";
+  }
+}
+</script>
+
+</body>
+</html>
